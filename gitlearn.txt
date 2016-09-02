@@ -1,2 +1,10 @@
 This is a text file for git learning 
 encoding is UTF-8 without BOM
+find a git space
+now these lines are added after this file's commitment, see the changes through git status and git diff
+git init
+git add gitlearn.txt 
+git commit -m "some explanation" 
+## do the change 
+git status
+git diff gitlearn.txt
