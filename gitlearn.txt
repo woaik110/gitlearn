@@ -9,8 +9,18 @@ git commit -m "some explanation"
 git status
 git diff gitlearn.txt
 git add gitlearn.txt
-git commit -m "add some change"
+git crchange"
 
 now use git log to check gitting history
 git log命令显示从最近到最远的提交日志，我们可以看到3次提交，最近的一次是append GPL，上一次是add distributed，最早的一次是wrote a readme file。
 如果嫌输出信息太多，看得眼花缭乱的，可以试试加上--pretty=oneline参数
+
+git reset --hard HEAD^　can be used to reset the version   
+git reflog        check the reset history
+$ git checkout -- readme.txt
+命令git checkout -- readme.txt意思就是，把readme.txt文件在工作区的修改全部撤销，这里有两种情况：
+一种是readme.txt自修改后还没有被放到暂存区，现在，撤销修改就回到和版本库一模一样的状态；
+一种是readme.txt已经添加到暂存区后，又作了修改，现在，撤销修改就回到添加到暂存区后的状态。
+总之，就是让这个文件回到最近一次git commit或git add时的状态。
+
+git rm用于删除一个文件
